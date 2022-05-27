@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  cluster-gateway-addon-manager:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-05-27T17:08:04.4008922+05:30"
+    description: A Helm chart for Cluster-Gateway Addon-Manager
+    digest: ded05a89cc101123152c77289815cc3938f5b835818c8253a37db279a053560b
+    name: cluster-gateway-addon-manager
+    type: application
+    urls:
+    - https://github.com/rupadhy3/my-helm-chart/cluster-gateway-addon-manager-1.1.11.tgz
+    version: 1.1.11
+generated: "2022-05-27T17:08:04.4001465+05:30"
