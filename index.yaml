@@ -1,8 +1,24 @@
 apiVersion: v1
 entries:
+  guestbook:
+  - apiVersion: v1
+    created: "2022-06-02T13:03:09.7811765+05:30"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - redis-database
+      version: 1.1.4
+    description: A guestbook Helm chart for Kubernetes.
+    digest: 6172171df0c77c40e969e95e34c4bff67b321b885fc15b6e4a6294a09374964b
+    name: guestbook
+    urls:
+    - guestbook-0.1.0.tgz
+    version: 0.1.0
   helloworld:
   - apiVersion: v1
-    created: "2022-05-27T18:47:41.644731+05:30"
+    created: "2022-06-02T13:03:09.7929876+05:30"
     description: helloworld chart that runs on kubernetes
     digest: e83b6e667e45b55253368433ae3f789b1f5e0fc7d3ba13c539a003379e5339bf
     home: https://github.com/stakater/chart-helloworld
@@ -14,6 +30,38 @@ entries:
       name: Stakater
     name: helloworld
     urls:
-    - https://github.com/rupadhy3/my-helm-chart/helloworld-1.0.0.tgz
+    - helloworld-1.0.0.tgz
     version: 1.0.0
-generated: "2022-05-27T18:47:41.6368877+05:30"
+  wordpress:
+  - apiVersion: v1
+    appVersion: 4.9.5
+    created: "2022-06-02T13:03:09.8054243+05:30"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - wordpress-database
+      version: 2.1.1
+    description: Web publishing platform for building blogs and websites.
+    digest: 51fe270f2aa1fd0bd22323294c9a4d1b852110cbca2079f8dff8fcd8dcd69dd1
+    home: http://www.wordpress.com/
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - wordpress
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: bitnami-bot
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    urls:
+    - wordpress-1.0.4.tgz
+    version: 1.0.4
+generated: "2022-06-02T13:03:09.7676962+05:30"
